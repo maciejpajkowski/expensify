@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render ExpensesSummary with 1 expense 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    <h1>
+        Viewing 
+        1
+         
+        expense
+         totaling 
+        $235.00
+    </h1>
+</div>,
+  "nodes": Array [
+    <div>
+      <h1>
+            Viewing 
+            1
+             
+            expense
+             totaling 
+            $235.00
+      </h1>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <ExpensesSummary
+      expenseCount={1}
+      expensesTotal={235}
+/>,
+    "_instance": null,
+    "_newState": null,
+    "_rendered": <div>
+      <h1>
+            Viewing 
+            1
+             
+            expense
+             totaling 
+            $235.00
+      </h1>
+</div>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ExpensesSummary
+    expenseCount={1}
+    expensesTotal={235}
+/>,
+}
+`;
+
+exports[`should correctly render ExpensesSummary with multiple expenses 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    <h1>
+        Viewing 
+        23
+         
+        expenses
+         totaling 
+        $2,355,232,432.00
+    </h1>
+</div>,
+  "nodes": Array [
+    <div>
+      <h1>
+            Viewing 
+            23
+             
+            expenses
+             totaling 
+            $2,355,232,432.00
+      </h1>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <ExpensesSummary
+      expenseCount={23}
+      expensesTotal={2355232432}
+/>,
+    "_instance": null,
+    "_newState": null,
+    "_rendered": <div>
+      <h1>
+            Viewing 
+            23
+             
+            expenses
+             totaling 
+            $2,355,232,432.00
+      </h1>
+</div>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ExpensesSummary
+    expenseCount={23}
+    expensesTotal={2355232432}
+/>,
+}
+`;
