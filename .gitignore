@@ -62,3 +62,5 @@ typings/
 
 # other
 public/dist/
+.env.test
+.env.development
