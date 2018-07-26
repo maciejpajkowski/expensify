@@ -1,4 +1,3 @@
-import uuid from 'uuid';
 import database from '../firebase/firebase';
 
 // Actions for expensesReducer
@@ -35,7 +34,34 @@ export const removeExpense = ({ id } = {}) => ({
 
 // EDIT_EXPENSE
 export const editExpense = (id, updates) => ({
-type: 'EDIT_EXPENSE',
-id,
-updates
+  type: 'EDIT_EXPENSE',
+  id,
+  updates
 });
+
+// SET_EXPENSES
+export const setExpenses = (expenses) => ({
+  type: 'SET_EXPENSES',
+  expenses
+});
+
+export const startSetExpenses = () => {
+  return (dispatch) => {
+    let expenses = [];
+    
+    return database.ref('expenses').once('value').then((snapshot) => {
+      snapshot.forEach((expense) => {
+
+        expenses.push({
+          id: expense.key,
+          ...expense.val()
+        });
+      });
+      dispatch(setExpenses(expenses));
+    }).catch((e) => {
+      console.log('Not the right way, my friend. ', e);
+    })
+  }
+};
+
+// 1. 
