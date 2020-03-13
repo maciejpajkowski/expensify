@@ -1,5 +1,5 @@
 {
-  "name": "indecision-app",
+  "name": "expensify",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Maciej Pajkowski",
@@ -28,6 +28,7 @@
     "moment": "2.18.1",
     "node-sass": "4.7.2",
     "normalize.css": "7.0.0",
+    "npm": "^6.14.2",
     "numeral": "^2.0.6",
     "react": "16.0.0",
     "react-addons-shallow-compare": "15.6.0",
