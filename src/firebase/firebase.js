@@ -1,5 +1,4 @@
 import * as firebase from 'firebase';
-import 'firebase/functions';
 
 const config = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -11,7 +10,7 @@ const config = {
   appId: process.env.FIREBASE_APP_ID
 };
 
-console.log(`Database url is :${process.env.FIREBASE_DATABASE_URL}`);
+console.log(`Database url is: ${process.env.FIREBASE_DATABASE_URL}`);
 
 firebase.initializeApp(config);
 
